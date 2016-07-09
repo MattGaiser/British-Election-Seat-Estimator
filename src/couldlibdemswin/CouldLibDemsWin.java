@@ -47,10 +47,10 @@ public class CouldLibDemsWin {
                 double cFactor = 0.5;
                 
                 var[2] = var[2] + var[3]; // Labour fixed
-                var[4] = (int) (var[4] + 0.63*cFactor*var[2] + 0.42*cFactor*var[0] + 0.75*cFactor*var[1]);
-                var[0] = (int) (var[0]*1-0.63*cFactor);
-                var[2] = (int) (var[2]* 1-0.42*cFactor);
-                var[1] = (int) (var[1]* 1- 0.75*cFactor);
+                var[4] = (int) (var[4] + 0.63*cFactor*var[2] + 0.42*cFactor*var[0] + 0.75*cFactor*var[1]); // Liberal democrats
+                var[0] = (int) (var[0]*1-0.63*cFactor); // Conservatives
+                var[2] = (int) (var[2]* 1-0.42*cFactor); // Labour
+                var[1] = (int) (var[1]* 1- 0.75*cFactor); // Greens
                 
                 if ( (var[4]> var[0])&&(var[4]> var[1])&&(var[4]> var[2])&&(var[4]> var[5])&&(var[4]> var[6])) // Liberal Dems
                 {
